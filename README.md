@@ -9,7 +9,8 @@ HTMLXPath is a small utility for consuming HTML web pages and querying using XPa
 
 # Usage
 
-```<?php
+```php
+<?php
 require 'vendor/autoload.php';
 
 foreach(HTMLXPath\xpath('http://www.seanbehan.com', '//a/text()') as $node)
