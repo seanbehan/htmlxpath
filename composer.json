@@ -1,0 +1,24 @@
+{
+    "name": "htmlxpath/htmlxpath",
+    "type": "library",
+    "description": "Simple HTML parsing with XPATH",
+    "keywords": ["html","xpath"],
+    "homepage": "https://github.com/seanbehan/htmlxpath",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sean Behan",
+            "email": "inbox@seanbehan.com",
+            "homepage": "http://www.seanbehan.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "HTMLXPath": "htmlxpath"
+        }
+    }
+}
