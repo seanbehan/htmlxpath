@@ -10,11 +10,13 @@ HTMLXPath is a small utility for consuming HTML web pages and querying using XPa
 # Usage
 
 ```<?php
+require 'vendor/autoload.php';
 
 foreach(HTMLXPath\xpath('http://www.seanbehan.com', '//a/text()') as $node)
   echo $node->nodeValue;
 
-foreach(HTMLXPath\html(file_get_contents('https://seanbehan.com')) as $doc)
+// or...
+foreach(HTMLXPath\html(file_get_contents('http://seanbehan.com')) as $doc)
   foreach(HTMLXPath\query($doc, '//a/text()') as $node)
     echo $node->nodeValue;
 
